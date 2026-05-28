@@ -3,7 +3,7 @@
 
 package:
   name: r-vegan
-  version: {{ version|replace("-", "_") }}
+  version: "{{ version|replace("-", "_") }}"
 
 source:
   url:
@@ -16,6 +16,10 @@ build:
   rpaths:
     - lib/R/lib/
     - lib/
+  missing_dso_whitelist:
+    - '*/R.dll'        # [win]
+    - '*/Rblas.dll'    # [win]
+    - '*/Rlapack.dll'  # [win]
 
 requirements:
   build:
@@ -59,7 +63,8 @@ test:
     - "\"%R%\" -e \"library('vegan')\""  # [win]
 
 about:
-  home: https://cran.r-project.org, https://github.com/vegandevs/vegan
+  home: https://vegandevs.github.io/vegan/
+  dev_url: https://github.com/vegandevs/vegan
   license: GPL-2.0-only
   summary: Ordination methods, diversity analysis and other functions for community and vegetation ecologists.
   license_family: GPL2
@@ -69,7 +74,6 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/r
-
 
 # Package: vegan
 # Title: Community Ecology Package
