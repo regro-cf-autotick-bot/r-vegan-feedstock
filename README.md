@@ -7,20 +7,24 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-vegan-feedsto
 About r-vegan
 -------------
 
-Home: https://cran.r-project.org, https://github.com/vegandevs/vegan
+Home: https://vegandevs.github.io/vegan/
 
 Package license: GPL-2.0-only
 
 Summary: Ordination methods, diversity analysis and other functions for community and vegetation ecologists.
+
+Development: https://github.com/vegandevs/vegan
 
 About r-vegan
 -------------
 
-Home: https://cran.r-project.org, https://github.com/vegandevs/vegan
+Home: https://vegandevs.github.io/vegan/
 
 Package license: GPL-2.0-only
 
 Summary: Ordination methods, diversity analysis and other functions for community and vegetation ecologists.
+
+Development: https://github.com/vegandevs/vegan
 
 Current build status
 ====================
